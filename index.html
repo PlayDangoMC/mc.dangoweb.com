@@ -100,7 +100,7 @@
             </div>
         </div>
     </nav>-->
-    <div class="page-header header-filter clear-filter" data-parallax="true" style="background-image: url('https://www.teahub.io/photos/full/116-1162250_allpaper-minecraft-data-src-best-minecraft-wallpaper-minecraft.jpg');">
+    <div class="page-header header-filter clear-filter" data-parallax="true" style="z-index:1; background-image: url('https://www.teahub.io/photos/full/116-1162250_allpaper-minecraft-data-src-best-minecraft-wallpaper-minecraft.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
@@ -124,7 +124,8 @@
             </div>
         </div>
     </div>
-    <!--<div class="main main-raised">
+    <video class="videobkg" style=" object-fit: cover; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index:-1" src="assets/img/wave.webm" autoplay loop playsinline muted></video>
+    <div class="main main-raised">
         <div class="section section-basic">
             <div class="container">
                 <div class="title">
@@ -1256,7 +1257,7 @@
             </div>
         </div>
         <div class="col-md-12 text-center">
-            <a href="examples/login-page.html" class="btn btn-link btn-primary btn-lg" target="_blank">View Login Page</a>
+            <a href="examples/login-page.html" class="btn btn-primary btn-lg" target="_blank">View Login Page</a>
         </div>
         <div class="section section-examples">
             <div class="container-fluid text-center">
@@ -1264,13 +1265,13 @@
                     <div class="col-md-6">
                         <a href="examples/landing-page.html" target="_blank">
                             <img src="assets/img/landing.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
-                            <button class="btn  btn-link btn-primary btn-lg">View Landing Page</button>
+                            <button class="btn btn-primary btn-lg">View Landing Page</button>
                         </a>
                     </div>
                     <div class="col-md-6">
                         <a href="examples/profile-page.html" target="_blank">
                             <img src="assets/img/profile.jpg" alt="Rounded Image" class="img-raised rounded img-fluid">
-                            <button class="btn btn-link btn-primary btn-lg">View Profile Page</button>
+                            <button class="btn btn-primary btn-lg">View Profile Page</button>
                         </a>
                     </div>
                 </div>
@@ -1327,8 +1328,8 @@
                 </div>
             </div>
         </div>
-    </div>-->
-    <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1348,8 +1349,8 @@
                 </div>
             </div>
         </div>
-    </div>-->
-    <!--<footer class="footer" data-background-color="black">
+    </div>
+    <footer class="footer" data-background-color="black">
         <div class="container">
             <nav class="float-left">
                 <ul>
@@ -1375,15 +1376,15 @@
                     </li>
                 </ul>
             </nav>
-    <div class="copyright float-right">
-        &copy;
-        <script>
-            document.write(new Date().getFullYear())
-        </script>
-        <img src="favicon.ico" height="20px" />DangoMC
-    </div>
-    </div>
-    </footer>-->
+            <div class="copyright float-right">
+                &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                <img src="favicon.ico" height="20px" />DangoMC
+            </div>
+        </div>
+    </footer>
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
@@ -1424,6 +1425,9 @@
             counter++;
             if (counter >= text.length) { counter = 0; }
         }
+    </script>
+    <script>
+        document.querySelector('videobkg').playbackRate = 5.0;
     </script>
 </body>
 
